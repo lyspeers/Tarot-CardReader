@@ -16,13 +16,13 @@
         <a class="nav-link active" href="public.php">Public</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="basicUser.php">Basic user</a>
+        <a class="nav-link" href="user.php">Basic user</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="consultant.php">Consultant</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="admin.php">Admin(inactive)</a>
+        <a class="nav-link" href="admin.php">Admin(inactive)</a>
       </li>
     </ul>
   </div>
