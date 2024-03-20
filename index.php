@@ -9,23 +9,32 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="public.php">Public</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="basicUser.php">Basic user</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="consultant.php">Consultant</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="admin.php">Admin(inactive)</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="header">
+        <?php
+            include "header.php"
+        ?>
+    </div>
+
+    <div class="wrapper_main">
+        <div class="wrapper_interior_a">
+            <p>test1</p>
+        </div>
+        
+        <div class="wrapper_interior_a">
+            <p>test1</p>
+        </div>
+    </div>
+    
+    <div class="wrapper_main">
+        <div class="wrapper_interior_a">
+            <p>test2</p>
+        </div>
+        
+        <div class="wrapper_interior_a">
+            <p>test2</p>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
