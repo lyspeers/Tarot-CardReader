@@ -8,7 +8,7 @@
 .header {
     position: sticky;
     top: 0px;
-    height: 10%;
+    height: auto;
     width: 100%;
     background-color: #ccccff;
     z-index: 999;
@@ -33,6 +33,10 @@
     background-color: #ccccff;
     padding: 10px;
     padding-bottom: 20px;
+	
+	border-radius:10px;
+	box-shadow: 10px 10px 5px #4444aa;
+	border: 2px outset black;
 
     word-wrap: break-word;
        
@@ -43,14 +47,34 @@
 }
 
 
+a {
+	font-family: tahoma;
+	font-size: 16pt;
+}
 
+html {
+	height:100%;
+}
 
 body {
-    background-color: #bbaabb;
+	height: 100%;
+	margin: 0;
+	background-image: linear-gradient(#7AA8CC, #4E72CE);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 br {
 	margin-bottom: 3px;
+}
+
+h1 {
+	
+	font-family: tahoma;
+}
+
+li {
+	font-family: tahoma;
 }
 
 p {
