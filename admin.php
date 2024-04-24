@@ -1,4 +1,8 @@
 <?php
+session_start();
+
+    include 'header.php';
+    
 $servername = "localhost"; 
 $username = "lyspeers"; 
 $password = "newpass"; 
