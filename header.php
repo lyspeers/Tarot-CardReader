@@ -8,7 +8,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
+<?php require "DBConnect.php";
+$user = "lucas";
+$pwd = "poop";
+$sql = "select UserID, UserName, UserPower from User where UserName = ? and UserPass = ?";
+//$result = queryDB($sql);
+$result = loginDB($sql, $user, $pwd);
+if (gettype($result) == "object") {
+  if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $UserID = $row['UserID'];
+    $UserName = $row['UserName'];
+    $UserPower = $row['UserPower'];
+    session_start();
+    $_SESSION['id'] = $UserID;
+    $_SESSION['username'] = $UserName;
+    $_SESSION['userPower'] = $UserPower;
+    //exit;
+  }else {
+    echo "Login Failed";
+  }
+}?>
 <nav class="navbar navbar-expand-sm bg-light navbar-light">
   <div class="container-fluid">
     <ul class="navbar-nav">

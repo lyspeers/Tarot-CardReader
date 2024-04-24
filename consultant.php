@@ -1,7 +1,6 @@
 <?php
-session_start();
+//session_start();
     include 'header.php';
-    echo strtolower ($_SESSION[userPower]);
 
 /* 
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
