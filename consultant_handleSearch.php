@@ -35,9 +35,9 @@
 			
 			while($row = $result->fetch_array())
 			{
-				echo "<div style='margin: 5px 0px 0px 0px'><span style='background-color: #9999ee; padding: 10px'>";
+				echo "<div style='margin: 5px 0px 0px 0px; font-family: tahoma;'><span style='background-color: #9999ee; padding: 10px'>";
 				echo "Reading #" . $row['ReadingID'];
-				echo "<form action='consultant_handleInterpret.php' method='POST' style='display: inline;'><input type='hidden' name='reading' value='" . $row["ReadingID"] . "'><input type='submit' value='Provide input' style='margin-left:10px;'></form></span></div>";
+				echo "<form action='consultant_handleInterpret.php' method='POST' style='display: inline;'><input type='hidden' name='reading' value='" . $row["ReadingID"] . "'><input type='submit' value='Provide input' style='margin-left:10px; font-family: tahoma;'></form></span></div>";
 				echo "<br>";
 			}
 

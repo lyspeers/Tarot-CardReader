@@ -50,8 +50,8 @@
 						echo 'Caught exception: ',  $e->getMessage(), "\n";
 					}
 					
-					echo "<h1>Consultation successful!</h1><br>";
-					echo "<b>You'll be redirected to the Consultant Panel after 5 seconds.</b>";
+					echo "<h1 style='font-family: tahoma;'>Consultation successful!</h1><br>";
+					echo "<b style='font-family: tahoma;'>You'll be redirected to the Consultant Panel after 5 seconds.</b>";
 		
 					$conn = null;
 					header( "refresh:5;url=index.php" );

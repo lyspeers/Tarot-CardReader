@@ -54,27 +54,27 @@
 					}
 					
 					$row = $result->fetch_array();
-					echo "<b>Current reading: </b>" . $row["ReadingID"] . "<br><br>";
-					echo "<b>Spread ID: </b>" . $row["SpreadID"] . "<br><br>";
+					echo "<b style='font-family: tahoma;'>Current reading: </b>" . $row["ReadingID"] . "<br><br>";
+					echo "<b style='font-family: tahoma;'>Spread ID: </b>" . $row["SpreadID"] . "<br><br>";
 					
 					// There has GOT to be a better way to do this...
-					echo "<b>Tarot Card #1 : </b>" . $row["TarotA"] . "<br>";
-					echo "<b>Tarot Card #2 : </b>" . $row["TarotB"] . "<br>";
-					echo "<b>Tarot Card #3 : </b>" . $row["TarotC"] . "<br>";
-					echo "<b>Tarot Card #4 : </b>" . $row["TarotD"] . "<br>";
-					echo "<b>Tarot Card #5 : </b>" . $row["TarotE"] . "<br>";
-					echo "<b>Tarot Card #6 : </b>" . $row["TarotF"] . "<br>";
-					echo "<b>Tarot Card #7 : </b>" . $row["TarotG"] . "<br>";
-					echo "<b>Tarot Card #8 : </b>" . $row["TarotH"] . "<br>";
-					echo "<b>Tarot Card #9 : </b>" . $row["TarotI"] . "<br>";
-					echo "<b>Tarot Card #10: </b>" . $row["TarotJ"] . "<br><br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #1 : </b>" . $row["TarotA"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #2 : </b>" . $row["TarotB"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #3 : </b>" . $row["TarotC"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #4 : </b>" . $row["TarotD"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #5 : </b>" . $row["TarotE"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #6 : </b>" . $row["TarotF"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #7 : </b>" . $row["TarotG"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #8 : </b>" . $row["TarotH"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #9 : </b>" . $row["TarotI"] . "<br>";
+					echo "<b style='font-family: tahoma;'>Tarot Card #10: </b>" . $row["TarotJ"] . "<br><br>";
 					// ...yeah.
 					
 					$conn = null;
 					$result->free();
 				?>
 				
-				<b>Your thoughts:</b>
+				<b style='font-family: tahoma;'>Your thoughts:</b>
 				<form action="consultant_handleSubmit.php" method="POST">
 					<textarea id="consult" name="consult" rows="4" cols="50">
 					Write your thoughts here...
