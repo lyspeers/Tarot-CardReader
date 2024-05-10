@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2024 at 04:12 PM
+-- Generation Time: Feb 26, 2024 at 05:51 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -87,9 +87,6 @@ CREATE TABLE `user` (
   `UserID` int(11) NOT NULL,
   `UserMail` varchar(32) NOT NULL,
   `UserPass` varchar(32) NOT NULL,
-  `UserName` varchar(50) NOT NULL,
-  `FullName` varchar(50) NOT NULL,
-  `Contact` int(13) NOT NULL,
   `UserRestricted` tinyint(1) NOT NULL,
   `UserPower` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -139,10 +136,8 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-ALTER TABLE `user`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT;
 
-
+--
 -- AUTO_INCREMENT for table `reading`
 --
 ALTER TABLE `reading`
