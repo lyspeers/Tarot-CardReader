@@ -1,6 +1,4 @@
 <?php
-//session_start();
-    include 'header.php';
 
 /* 
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
